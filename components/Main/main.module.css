@@ -1,0 +1,12 @@
+.content {
+  width: 70%;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

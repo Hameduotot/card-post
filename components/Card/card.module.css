@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  transition: all ease 400ms;
+  border-radius: 0.375rem;
+}
+.container:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+
+.topcard {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.container > img {
+  border-radius: 0.375rem 0.375rem 0 0;
+}
+.topcard > span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text {
+  max-height: 700px;
+}
+.text > .info > p {
+  text-align: justify;
+  padding: 0 2rem;
+}
+.text > .info > div {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.text > .info > div > span {
+  cursor: pointer;
+  color: rgb(121, 121, 227);
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button > button {
+  padding: 8px 50px;
+  margin: 20px;
+  border: 3px solid rgba(220, 53, 69, 1);
+  border-radius: 0.375rem;
+  transition: all ease 500ms;
+  cursor: pointer;
+  background-color: transparent;
+  color: rgba(220, 53, 69, 1);
+  font-size: 1rem;
+}
+
+.button > button:hover {
+  transform: scale(1.1);
+  border-color: rgba(220, 53, 69, 0.7);
+  font-size: 1.05rem;
+  color: white;
+  background-color: rgba(220, 53, 69, 1);
+}
+.showless {
+  max-height: 10ch;
+  overflow: hidden;
+}
+.readmore {
+  max-height: 100%;
+  overflow: hidden;
+}
