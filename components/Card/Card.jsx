@@ -1,10 +1,13 @@
 import React, { useState } from "react";
-import styles from "./card.module.css";
+import styles from "./card.module.scss";
 function Card({ data, removeHandler }) {
   const [readmore, setReadmore] = useState(false);
   return (
     <div className={styles.container}>
-      <img src={data.image} />
+      <div className={styles.imgcontainer}>
+        <img src={data.image} />
+      </div>
+
       <div className={styles.text}>
         <div className={styles.topcard}>
           <h2>{data.name}</h2>
